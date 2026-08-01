@@ -167,6 +167,15 @@
     text-decoration-color:var(--danger);
   }
 
+  .forwhat{
+    display:flex;align-items:center;gap:10px;
+    background:var(--card);border:1px solid var(--border);
+    border-radius:12px;padding:13px 15px;margin:-12px 0 26px;
+    font-size:13.5px;color:var(--muted);
+  }
+  .forwhat svg{flex-shrink:0;color:var(--accent);}
+  .forwhat b{color:var(--text);font-weight:700;}
+
   /* ── платёжная форма ── */
   .payform{margin-top:4px;text-align:left;}
   .pf-label{
@@ -350,6 +359,10 @@
     </span>
     <h1>Все боятся, что ИИ заменит дизайнеров. А я, не умея кодить, поставил ИИ <span class="hl">искать мне клиентов</span>.</h1>
     <p class="lead">Собери своего AI-помощника для поиска клиентов за вечер. Сократил 8 часов ручного поиска до одного, без единой строчки кода.</p>
+    <div class="forwhat">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1.8c.42 0 .77.31.83.72l.63 4.3 3.06-3.09a.84.84 0 0 1 1.35.96l-1.92 3.9 4.1-1.53a.84.84 0 0 1 .74 1.5l-3.84 2.1 4.35.61a.84.84 0 0 1 0 1.66l-4.35.6 3.84 2.11a.84.84 0 0 1-.74 1.5l-4.1-1.53 1.92 3.9a.84.84 0 0 1-1.35.96l-3.06-3.09-.63 4.3a.84.84 0 0 1-1.66 0l-.63-4.3-3.06 3.09a.84.84 0 0 1-1.35-.96l1.92-3.9-4.1 1.53a.84.84 0 0 1-.74-1.5l3.84-2.1-4.35-.61a.84.84 0 0 1 0-1.66l4.35-.6-3.84-2.11a.84.84 0 0 1 .74-1.5l4.1 1.53-1.92-3.9a.84.84 0 0 1 1.35-.96l3.06 3.09.63-4.3c.06-.41.41-.72.83-.72Z"/></svg>
+      <span>Промпты написаны под <b>Claude Code</b> — нужен доступ к нему</span>
+    </div>
     <a href="#price" class="btn">
       Получить гайд за 490₽
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
@@ -408,7 +421,7 @@
     <div class="steps">
       <div class="step">
         <div class="step-n">1</div>
-        <div class="step-b"><h3>Ставишь задачу ИИ по готовым промптам</h3><p>Копируешь текст из гайда, вставляешь в Клод Код. Ничего не пишешь сам.</p></div>
+        <div class="step-b"><h3>Ставишь задачу ИИ по готовым промптам</h3><p>Копируешь текст из гайда, вставляешь в Claude Code. Ничего не пишешь сам.</p></div>
       </div>
       <div class="step">
         <div class="step-n">2</div>
@@ -460,7 +473,7 @@
     <div class="cards">
       <div class="card">
         <div class="ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m8 6-6 6 6 6M16 6l6 6-6 6"/></svg></div>
-        <div><h3>Промпт-шаблоны</h3><p>Копируешь в Клод Код по порядку, не изобретаешь формулировки сам.</p></div>
+        <div><h3>Промпт-шаблоны для Claude Code</h3><p>Копируешь по порядку, не изобретаешь формулировки сам.</p></div>
       </div>
       <div class="card">
         <div class="ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v12H7l-3 3z"/></svg></div>
@@ -476,7 +489,7 @@
       </div>
       <div class="card">
         <div class="ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4H8"/><rect x="4" y="8" width="16" height="12" rx="2"/><path d="M2 14h2M20 14h2M15 13v2M9 13v2"/></svg></div>
-        <div><h3>Память для Клод Кода</h3><p>Не объясняешь заново город, нишу и тон сообщений при каждом запуске.</p></div>
+        <div><h3>Память для Claude Code</h3><p>Не объясняешь заново город, нишу и тон сообщений при каждом запуске.</p></div>
       </div>
       <div class="card">
         <div class="ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg></div>
@@ -634,6 +647,13 @@
         <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
       </summary>
       <p class="a">Нет. Я сам не пишу код — гайд написан для тех, кто тоже не умеет.</p>
+    </details>
+
+    <details class="faq">
+      <summary>Для какой нейросети промпты?
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
+      </summary>
+      <p class="a">Для Claude Code — это инструмент от Anthropic, который умеет писать и запускать код прямо у тебя на компьютере. Промпты писались и проверялись именно под него, поэтому доступ к Claude Code нужен обязательно. В обычном чате нейросети они тоже дадут текст кода, но запускать и чинить его придётся самому, а весь смысл как раз в том, чтобы этим занимался ИИ.</p>
     </details>
     <details>
       <summary>Это подписка?
