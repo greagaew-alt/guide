@@ -157,6 +157,14 @@
   }
   .perk svg{flex-shrink:0;color:var(--accent);}
 
+  .price-launch{
+    display:inline-flex;align-items:center;gap:7px;
+    background:rgba(47,224,194,.08);border:1px solid var(--accent-deep);
+    color:var(--accent);font-size:12.5px;font-weight:700;
+    padding:8px 14px;border-radius:100px;margin:-6px auto 20px;
+  }
+  .price-launch svg{flex-shrink:0;}
+
   /* ── платёжная форма ── */
   .payform{margin-top:4px;text-align:left;}
   .pf-label{
@@ -586,6 +594,10 @@
     <div class="price-box">
       <div class="price-ref">Похожий гайд на Kwork — от 3500₽</div>
       <div class="price">490₽</div>
+      <div class="price-launch">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v6M12 22v-4M4.9 4.9l4.2 4.2M14.9 14.9l4.2 4.2M2 12h6M22 12h-4"/></svg>
+        Стартовая цена на время запуска. Дальше — 2000₽
+      </div>
       <form class="payform" action="https://yookassa.ru/integration/simplepay/payment" method="post" accept-charset="utf-8">
         <label class="pf-label" for="pf-email">Куда прислать гайд</label>
         <input id="pf-email" name="cps_email" class="pf-input" placeholder="Твоя почта" type="email" required>
